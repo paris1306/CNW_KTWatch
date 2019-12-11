@@ -113,8 +113,8 @@
                 <div class="payment_box payment_method_cheque" style="display: block;">
                   Chuyển tiền đến tài khoản sau:
                   <br>- Số tài khoản: 123 456 789
-                  <br>- Chủ TK: Nguyễn Hoài Nam
-                  <br>- Ngân hàng ACB, Chi nhánh TP Hưng Yên
+                  <br>- Chủ TK: KTShop
+                  <br>- Ngân hàng ACB, Chi nhánh TP Long Xuyên
                 </div>            
               </li>
 

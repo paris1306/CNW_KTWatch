@@ -32,10 +32,29 @@
 			<br><br>
             <div class="col-sm-4">
                 <input type="text" class="form-control" name="phone" placeholder="Phone" value="{{$thanhvien->phone}}" required>
-				<br>
+				<br><br>
             </div>
     </div>
 
+    <div style="margin-left: 15px; margin-right: 15px" class="form-group row">
+            <label class="col-sm-2 col-form-label">Quyền</label>
+			<br><br>
+            <div class="col-sm-4">
+            	<select class="form-control" name="access">
+                      <option value="0" 
+                      	@if($thanhvien->access == 0)
+                      	{{"selected"}} 
+                      	@endif > Người dùng thường</option>
+                      <option value="1" 
+                      	@if($thanhvien->access == 1)
+                      	{{"selected"}} 
+                      	@endif >Admin</option>
+                  </select>
+                
+				<br><br>
+            </div>
+    </div>
+		<br><br><br><br>
 		<button class="btn btn-danger float-right" style="margin-right: 20px; margin-left: 15px" data-toggle="modal" data-target="#myModal">Sửa</button>
 	
 </form>

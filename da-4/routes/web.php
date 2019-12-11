@@ -445,7 +445,31 @@ Route::get('/', function () {
 		'uses'=>'admincontroller@huydon'
 	]);
 
+//slide header
+	Route::get('add-silde-header',[
+		'as'=>'addsilde',
+		'uses'=>'admincontroller@addslide'
+	]);
+	
+	Route::post('add-silde-header',[
+		'as'=>'addsilde',
+		'uses'=>'admincontroller@postaddslide'
+	]);
+
+	Route::get('update-silde-header/{id}',[
+		'as'=>'updateslide',
+		'uses'=>'admincontroller@suasilde'
+	]);
+
+	Route::post('update-silde-header/{id}',[
+		'as'=>'updateslide',
+		'uses'=>'admincontroller@postupdateslide'
+	]);
+
+	Route::get('xoa-silde-header/{id}',[
+		'as'=>'deleteslide',
+		'uses'=>'admincontroller@xoaslide'
+	]);
 
 
-
-
+?>

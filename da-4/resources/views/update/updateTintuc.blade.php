@@ -43,8 +43,8 @@
         filebrowserFlashUploadUrl: '{{ asset('public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
     } );
 		</script>
-		
-		<input type="submit" style=" margin-top: 30px;" name="submit" class="form-control " value="Ok">
+		<br><br>
+		<button class="btn btn-danger float-right" style="margin-right: 20px; margin-left: 15px" data-toggle="modal" data-target="#myModal">Sửa</button>
 	</div>
 </form>
 

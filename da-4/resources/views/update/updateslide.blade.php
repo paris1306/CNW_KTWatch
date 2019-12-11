@@ -1,29 +1,28 @@
 @extends('quantri.masterQT')
-@section('title','Sửa Thương Hiệu')
+@section('title','Sửa slide header')
 @section('quanly')
 
-<h3 style="font-family: cursive;margin-left: 10px;margin-top: 0px" >Sửa Thương Hiệu </h3>
+<h3 style="font-family: cursive;margin-left: 10px;margin-top: 0px" >Sửa Slide</h3>
 
-<form method="post" action="{{ route('updatethuonghieu',$thuonghieu->id) }}" enctype="multipart/form-data">
+<form method="post" action="{{ route('updateslide',$slide->id) }}" enctype="multipart/form-data">
 	{{csrf_field()}}
 	
 	<div style="margin-left: 15px; margin-right: 15px">
 		<label style="margin-top: 10px;">Tên</label>
-		<input type="text" name="tenthuonghieu"  class="form-control" style="margin-bottom: 30px;"value="{{$thuonghieu->name_producer}}">
+		<input type="text" name="name"  class="form-control" style="margin-bottom: 30px;"value="{{$slide->name}}">
 		<table>
 			<tr>
 				<td colspan="3">
 					<label style="margin-top: 10px;">Ảnh</label><br>
-					<input id="ckfinder-input-1" type="text" name="imagelink" class="form-control" style="margin-bottom: 30px;" value="{{$thuonghieu->image_link}}" >
+					<input id="ckfinder-input-1" type="text" name="image" class="form-control" style="margin-bottom: 30px;" value="{{$slide->image}}" >
 					<button type="button" id="ckfinder-popup-1" class="button-a button-a-background" style="margin-top: -15px">Browse</button>
 				</td>
 				
 			</tr>
+			<br><br>
 		</table>
+	
 		<br><br>
-		<label style="margin-top: 10px;">Mô tả</label>
-		<textarea class="form-control" id="mota" name="mota" rows="10" cols="100" style="margin-bottom: 30px" >{{$thuonghieu->mota}}</textarea>
-		
 		<button class="btn btn-danger float-right" style="margin-center: 7px; margin-left: 10px" data-toggle="modal" data-target="#myModal">Sửa</button>
 	</div>
 </form>

@@ -2,7 +2,7 @@
 <div id="nav">
   <div>
     <img src="public\image\icon\a.png" width="15px" height="15px" style="margin-left: 80px; margin-top: 15px; float: left;margin-right: 10px">
-    <a style=" color: white; font-size: 13px; margin-left: 10px;float: left;margin-top: 13px" href="#" >Hotline : 0367.893.306 &nbsp;|</a>
+    <a style=" color: white; font-size: 13px; margin-left: 10px;float: left;margin-top: 13px" href="#" >Hotline : 012.345.678 &nbsp;|</a>
     {{csrf_field()}}
     @if(Auth::check())
      
@@ -15,8 +15,6 @@
 
                 <p style="color: white">
                   {{Auth::user()->name}}
-                  <br>
-                  <small>Member since {{Auth::user()->created_at}}</small>
                 </p>
               </li>
              
@@ -42,8 +40,7 @@
 
                 <p style="color: white">
                   {{Auth::user()->name}}
-                  <br>
-                  <small>Member since {{Auth::user()->created_at}}</small>
+
                 </p>
               </li>
              

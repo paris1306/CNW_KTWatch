@@ -65,7 +65,8 @@
 			<td>{{$bl->noidung}}</td>
 			<td>{{$bl->kiemtra}}</td>
 			<td>{{$bl->created_at}}</td>	
-			<td class="center"><a href="delete/{{$bl->id}}"><i class="icon icon-bin"></i><button class="btn btn-primary"  style="color: white" type="submit">Xóa</button></a>
+			<td class="center"><a href="delete/{{$bl->id}}"><i class="icon icon-bin"></i>
+			<button class="btn btn-primary"  style="color: white" type="submit">Xóa</button></a>
 			</td>
 				
 		</tr>

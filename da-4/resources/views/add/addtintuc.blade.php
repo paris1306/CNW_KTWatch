@@ -22,13 +22,13 @@
 	</div>
 	<div style="margin-left: 15px; margin-right: 15px">
 		<label style="margin-top: 10px;">Tên</label>
-		<input type="text" name="ten"  class="form-control" style="margin-bottom: 10px;width: 500px;font-size: 13px" placeholder="nhập tên tin tức ..." required>
+		<input type="text" name="ten"  class="form-control" style="margin-bottom: 10px;width: 500px;font-size: 13px" placeholder="Nhập tên tin tức ..." required>
 		
 		<label style="margin-top: 10px;">Ảnh</label>
-		<input type="text" name="image"  class="form-control" style="margin-bottom: 30px;width: 500px;font-size: 13px" placeholder="nhập link ảnh ..." required>
+		<input type="text" name="image"  class="form-control" style="margin-bottom: 30px;width: 500px;font-size: 13px" placeholder="Nhập link ảnh ..." required>
 
 		<label style="margin-top: 10px;">Người Đăng</label>
-		<input type="text" name="nguoidang"  class="form-control" style="margin-bottom: 10px;width: 500px;font-size: 13px" placeholder="nhập tên ..." required>
+		<input type="text" name="nguoidang"  class="form-control" style="margin-bottom: 10px;width: 500px;font-size: 13px" placeholder="Nhập tên ..." required>
 
 		Nội dung:
 		<textarea id="editor1" class="ckeditor" name="noidung" rows="10" cols="100" style="margin-bottom: 30px" required></textarea>
@@ -43,8 +43,8 @@
         filebrowserFlashUploadUrl: '{{ asset('public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
     } );
 		</script>
-		
-		<input type="submit" style=" margin-top: 30px;" name="submit" class="form-control " value="Ok">
+		<br><br>
+		<button class="btn btn-danger float-right" style="margin-right: 20px; margin-left: 15px" data-toggle="modal" data-target="#myModal">Thêm</button>
 	</div>
 </form>
 

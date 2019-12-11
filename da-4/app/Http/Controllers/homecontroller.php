@@ -202,7 +202,7 @@ public function signup(){
 public function postSignup(Request $req){
   $this->validate($req,
     [
-      'email'=>'unique:user,email',
+      'email'=>'unique:users,email',
       'pass'=>'min:6|max:20',
       'repass'=>'same:pass'
 

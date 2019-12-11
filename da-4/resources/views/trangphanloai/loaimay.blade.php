@@ -6,7 +6,6 @@
 	<p style="font-size: 28px;text-align: center;margin-right: 55px;padding-top: 10px">ĐỒNG HỒ {{$ten_l->name_loai}} </p>
 </div>
 
-
 <br>
 <br>
 <br>

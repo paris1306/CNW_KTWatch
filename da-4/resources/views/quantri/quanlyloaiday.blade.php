@@ -51,7 +51,7 @@
 					style="color:white" >Sửa</a></button>
 				</td>
 				
-			<td><form action="{{ route('deleteloaiday',$loaiday->id) }}" method="get" onsubmit="return confirm('Bạn có chắc chắn xóa không ?')">
+			<td><form action="{{ route('deleteloaiday',$loaiday->id) }}" method="get" onclick="return confirm('Bạn có chắc chắn xóa không ?')">
 					{{csrf_field()}}
 					<button class="btn btn-primary"  style="color: white" type="submit">Xóa</button>
 				</form></td>

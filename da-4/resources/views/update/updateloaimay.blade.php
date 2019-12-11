@@ -1,5 +1,5 @@
 @extends('quantri.masterQT')
-@section('title','Sửa sản phẩm')
+@section('title','Sửa loại máy')
 @section('quanly')
 
 

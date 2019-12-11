@@ -230,7 +230,7 @@
             <div class="col-sm-4 s-left">
               <footer>
         <a href="index.php"><img src="logo.png" width="75px" height="50px" style="border: 1px solid black; margin-top: 20px; margin-left: 20px"></a>
-        <p style="color: white; margin-top: 10px">ĐỊA CHỈ: SỐ NHÀ 125 - PHỐ BÙI THỊ CÚC THỊ - TRẤN ÂN THI - HUYỆN ÂN THI - TỈNH HƯNG YÊN</p>
+        <p style="color: white; margin-top: 10px">ĐỊA CHỈ: LONG XUYÊN - AN GIANG</p>
             
       </footer>
             </div>

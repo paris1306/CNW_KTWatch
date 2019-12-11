@@ -36,7 +36,7 @@
 			<th>Stt</th>
 			<th >Tên Slide</th>
 			<th>Ảnh Slide</th>
-			<th>Link Liên Kết</th>
+		
 			
 			<th colspan="2">Chức năng</th>
 		</tr>
@@ -60,10 +60,13 @@
 			<td>{{$stt}}</td>
 			<td>{{$s_l ->name}}</td>
 			<td><img src="{{$s_l ->image}}" width="110px" height="50px"></td>
-			<td>{{$s_l ->link}}</td>
 			
-			<td><button class="btn btn-primary">Sửa</button></td>
-			<td><form action="" method="get" onsubmit="return confirm('Bạn có chắc chắn xóa không ?')">
+				<td>
+					<button class="btn btn-primary" ><a href="{{ route('updateslide',$s_l->id) }}"  
+					style="color:white">Sửa</a></button>
+				</td>
+			
+			<td><form action="{{ route('deleteslide',$s_l->id) }}" method="get" onsubmit="return confirm('Bạn có chắc chắn xóa không ?')">
 					{{csrf_field()}}
 					<button class="btn btn-primary"  style="color: white" type="submit">Xóa</button>
 				</form></td>
@@ -101,7 +104,7 @@
 									<td>
 										<div class="form-group">
 											<label>Tên slide:</label>
-											<input type="text" class="form-control" name="name" placeholder="tên thương hiệu"  >
+											<input type="text" class="form-control" name="name" placeholder="Tên silde"  >
 										</div>
 									</td>
 								</tr>
@@ -109,22 +112,14 @@
 									<td>
 										<div class="form-group ">
 											<label>Ảnh :</label>
-											<input type="text" name="image" class="form-control" placeholder="link ảnh" >
+											<input type="text" name="image" class="form-control" placeholder="Link ảnh" >
 										</div>
 									</td>
 									
-									<tr>
-
-
-										<td>
-											<div class="form-group ">
-												<label>link liên kết:</label>
-												<input type="text" name="mota" class="form-control" placeholder="link" >
-											</div>
-										</td>
-										
 									</tr>
-											
+
+
+										
 								</table>
 							</div>
 							<div class="modal-footer">

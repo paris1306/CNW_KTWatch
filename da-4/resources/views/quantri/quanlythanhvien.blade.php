@@ -34,13 +34,13 @@
 		<tr class="bg-danger ">
 
 			<th>Stt</th>
-			<th >Name</th>
+			<th>Name</th>
 			<th>Image</th>
 			<th>Email</th>
-			<th>address</th>
-			<th>phone</th>
-			<th>created-at</th>		
-			<th colspan="2">Chức năng</th>
+			<th>Address</th>
+			<th>Phone</th>	
+			<th>Quyền hạn</th>	
+			<th colspan="3">Chức năng</th>
 		</tr>
 		
 		<tbody class="danhsach">
@@ -65,7 +65,7 @@
 			<td>{{$TV -> email}}</td>
 			<td>{{$TV -> address}}</td>
 			<td>{{$TV -> phone}}</td>
-			<td>{{$TV -> created_at}}</td>	
+			<td>{{$TV -> access}}</td>
 
 			<td>
 			<td>

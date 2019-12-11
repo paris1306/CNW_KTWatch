@@ -629,6 +629,7 @@ public function xoaloaimay( $id)
 	
 		$thanhvien->address = $Request->input('address');
 		$thanhvien->phone = $Request->input('phone');
+		$thanhvien->access = $Request->input('access');
 	
 
 		$thanhvien->save();
@@ -744,4 +745,59 @@ public function xoaloaimay( $id)
 		return redirect()->back()->with('thanhcong','Xóa thành công!');
 	}
 
+	/// quan ly silder header
+	
+	public function addslide(Request $req){
+
+		$this->validate($req,
+			[
+				'name'=>'unique:Slide,name',
+
+
+			],
+			[
+				'name.unique'=>'Sản phẩm đã tồn tại !'
+
+
+			]);
+
+		$slide = new Slide();
+		$slide->name = $req->name;
+		$slide->image = $req->image;
+	
+		
+		$slide->save();
+		return redirect()->back()->with('thanhcong','Thêm thành công!');	
+
+	}
+
+	
+	public function suasilde(Request $id){
+
+		$slide = Slide::where('id',$id->id)->first();
+		return view('update.updateslide',compact('slide'));
+	}
+
+
+	public function postupdateslide(Request $Request,$id){
+
+		
+		$slide = Slide::find($id);
+		$slide->name = $Request->input('name'); //2 cai nay phai giong nhau
+		$slide->image = $Request->input('image');
+		
+
+		$slide->save();
+		return redirect()->route('qlSlide')->with('thanhcong','Sửa thành công!');
+
+	}
+
+
+	public function xoasilde( $id)
+	{
+		$slide= Slide::where('id',$id)->delete();
+		
+		return redirect()->back()->with('thanhcong','Xóa thành công!');
+	}
+	
 }

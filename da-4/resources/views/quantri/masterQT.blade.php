@@ -179,10 +179,9 @@
 
   <footer class="main-footer" style="margin-left: 0px">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
+      <b>Nhóm</b> 4
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; 2019 <a href="https://adminlte.io">KT.Shop</a>.</strong>Website bán đồng hồ.
   </footer>
 
   

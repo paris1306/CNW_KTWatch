@@ -1,5 +1,5 @@
 @extends('quantri.masterQT')
-@section('title','Sửa sản phẩm')
+@section('title','Sửa loại dây')
 @section('quanly')
 <br>
 <h3 style="font-family: cursive;margin-left: 10px;margin-top: 0px" >Sửa Loại Dây</h3>
